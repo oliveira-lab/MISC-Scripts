@@ -1,0 +1,7 @@
+This is a dummy text file!
+
+
+I will be encrypted to DNA (ATGC) code.
+
+
+And then decrypted back to original text file.
