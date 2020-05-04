@@ -91,7 +91,7 @@ keys=(
 
 if [[ "$crypt_option" == "encrypt" ]]; then
 
-    tput setaf 2; echo "Currently $crypt_option"ing" ASCII to DNA. Please wait..."; tput sgr0
+    tput setaf 2; echo "Currently $crypt_option"ing" text to DNA. Please wait..."; tput sgr0
 	awk '{print $0}' ${crypt_file} | perl -lpe '$_=join " ", unpack"(B8)*"' > binary_file.txt
 
 	rnd=${keys[$RANDOM % ${#keys[@]}]}
@@ -117,7 +117,7 @@ echo "-----------------------------------"
 
 
 else
-    tput setaf 2; echo "Currently $crypt_option"ing" ASCII to DNA. Please wait..."; tput sgr0
+    tput setaf 2; echo "Currently $crypt_option"ing" DNA to text. Please wait..."; tput sgr0
 
 	arrayindex=`awk 'NR==1{print substr($1,2)-1}' $crypt_file`
 
