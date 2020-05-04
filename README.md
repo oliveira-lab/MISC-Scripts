@@ -3,7 +3,7 @@ Useful bash/python/perl scripts for bioinformatics.
 
 ## Encryption_Decryption
 
-This bash script performs a simple encryption of a text file into DNA code (represented as nucleotides A, T, C, G).
+The GO_Crypt.sh script performs a simple encryption of a text file into DNA code (represented as nucleotides A, T, C, G).
 The algorithm works by converting each text character (letters, numbers, symbols) into a binary form, and transforming the latter into DNA using a randomly generated key dictionary of the form:
 
 	keys=(
