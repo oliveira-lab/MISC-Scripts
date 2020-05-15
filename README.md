@@ -27,3 +27,15 @@ where Text.txt is any text file to be encrypted (provided as example). This will
 	./GO.Crypt.sh -c decrypt -f DNA_Encrypted.txt
     
 This produces the original decrypted text file.
+
+
+## Shannon_Entropy
+
+The GO_Shannon.sh script computes the Shannon entropy at each individual position of a multi-sequence alignment (MSA) in FASTA format. 
+The script takes into consideration the desired gap ratio, i.e, the percentage of gaps at a given position (varies between [0-1[).
+
+To run it:
+
+	./GO.Shannon.sh -f <MSA: FASTA file> -g <gap_ratio [0-1[>
+
+This produces an output Shannon_Entropy.txt file.
