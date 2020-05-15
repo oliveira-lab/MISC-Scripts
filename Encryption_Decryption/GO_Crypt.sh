@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #########################################################################
-# File Name: Crypt.sh
+# File Name: GO_Crypt.sh
 # Author(s): Pedro H. Oliveira
 # Institution: Mount Sinai School of Medicine, NY, USA
 # Mail: pcphco@gmail.com
@@ -11,7 +11,7 @@
 
 
 help='''
-  USAGE:  Crypt.sh
+  USAGE:  GO_Crypt.sh
     -c   <crypt_option: encrypt / decrypt>
     -f   <crypt_file: text (use with encrypt) or DNA (use with decrypt)>
 '''

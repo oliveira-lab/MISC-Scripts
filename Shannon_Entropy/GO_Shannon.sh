@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #########################################################################
-# File Name: Shannon.sh
+# File Name: GO_Shannon.sh
 # Author(s): Pedro H. Oliveira
 # Institution: Mount Sinai School of Medicine, NY, USA
 # Mail: pcphco@gmail.com
@@ -10,7 +10,7 @@
 
 
 help='''
-  USAGE:  Shannon.sh
+  USAGE:  GO_Shannon.sh
     -f   <MSA: FASTA file>
     -g   <gap_ratio: number between [0-1[. 0 means no gaps are accepted at a given position>
 '''

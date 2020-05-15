@@ -1,5 +1,5 @@
 # MISC-Scripts
-Useful bash/python/perl scripts for bioinformatics.
+Useful bash/python/R scripts for bioinformatics.
 
 ## Encryption_Decryption
 
@@ -31,11 +31,24 @@ This produces the original decrypted text file.
 
 ## Shannon_Entropy
 
+Shannon entropy H(X) is defined as the entropy of a discrete random variable X with possible values {x1, ..., xn} and probability mass function P(X):
+
+<a href="https://www.codecogs.com/eqnedit.php?latex={\displaystyle&space;\mathrm&space;{H}&space;(X)=-\sum&space;_{i=1}^{n}{\mathrm&space;{P}&space;(x_{i})\log&space;_{b}\mathrm&space;{P}&space;(x_{i})},}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{\displaystyle&space;\mathrm&space;{H}&space;(X)=-\sum&space;_{i=1}^{n}{\mathrm&space;{P}&space;(x_{i})\log&space;_{b}\mathrm&space;{P}&space;(x_{i})},}" title="{\displaystyle \mathrm {H} (X)=-\sum _{i=1}^{n}{\mathrm {P} (x_{i})\log _{b}\mathrm {P} (x_{i})},}" /></a>
+
+where b is the base of the logarithm used.
+
 The GO_Shannon.sh script computes the Shannon entropy at each individual position of a multi-sequence alignment (MSA) in FASTA format. 
-The script takes into consideration the desired gap ratio, i.e, the percentage of gaps at a given position (varies between [0-1[).
+The script takes into consideration the desired gap ratio, i.e, the percentage of gaps at a given position (varying between [0-1[).
 
 To run it:
 
 	./GO.Shannon.sh -f <MSA: FASTA file> -g <gap_ratio [0-1[>
 
 This produces an output Shannon_Entropy.txt file.
+
+## DNA_Walk
+
+A ‘DNA Walk’ is defined as a 1D random walk model that steps up (+1) if a pyrimidine occurs at a position i along the DNA chain or steps down (-1) in case a purine occurs. 
+The GO_WALK.sh script performs a DNA walk given as input a DNA sequence in FASTA format:
+
+	./GO.WALK.sh -f <FASTA file>
